@@ -1,20 +1,14 @@
-import os
 import json
 import re
 import time
 import requests
 import streamlit as st
-from dotenv import load_dotenv
 
-load_dotenv()
 
 # -----------------------------
 # Config
 # -----------------------------
-DUDY_LAMBDA_URL = os.getenv(
-    "DUDY_LAMBDA_URL",
-    "https://n6iudam7vomf747ijpiggbdyoa0gsrma.lambda-url.ap-southeast-1.on.aws/"
-)
+DUDY_LAMBDA_URL = "https://n6iudam7vomf747ijpiggbdyoa0gsrma.lambda-url.ap-southeast-1.on.aws/"
 
 st.set_page_config(page_title="Dudy Chatbot", page_icon="💬", layout="wide")
 st.title("💬 Dudy Stream Chatbot")
